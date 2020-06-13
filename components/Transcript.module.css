@@ -1,0 +1,26 @@
+.twoColumns {
+  display: grid;
+}
+
+.twoColumns > * {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .twoColumns {
+    grid-template-columns: auto auto;
+  }
+}
+
+.input {
+  resize: vertical;
+  background: var(--color-background-highlights);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+.output {
+  margin-top: calc(.5rem + 1px);
+}
